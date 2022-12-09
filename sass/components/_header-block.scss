@@ -1,0 +1,9 @@
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    .header-block {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--bcg3-color);
+    }
+}

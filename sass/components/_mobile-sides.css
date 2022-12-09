@@ -1,0 +1,1 @@
+.mobile-sides{position:absolute;display:flex;flex-direction:column;list-style:none;gap:2rem;padding-left:8.33%;padding-top:6%}.mobile-sides__webpage,.mobile-sides__webpage--active{font-size:2.5em;line-height:47px;letter-spacing:.02em;text-decoration:none;color:var(--default-color)}.mobile-sides__webpage--active::after{color:var(--active-color)}

@@ -1,0 +1,33 @@
+.blue-window {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &__details {
+        border: 0px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__details--text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: var(--default-color2);
+        padding-top: 49px;
+        padding-left: 24px;
+        padding-right: 45px;
+    }
+
+    &__picture-before {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

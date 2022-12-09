@@ -1,0 +1,27 @@
+.daily-business {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 0px;
+
+    &__description-box {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        bottom: 4px;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+    &__description-box--text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--default-color2);
+        text-align: center;
+        padding-top: 27px;
+    }
+}

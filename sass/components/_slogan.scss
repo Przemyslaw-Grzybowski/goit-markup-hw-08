@@ -1,0 +1,45 @@
+.slogan {
+    background-color: transparent;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__text {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.33;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+
+        padding: 0px 252px 30px 252px;
+
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--default-color2);
+    }
+
+    &__button {
+        border: none;
+        cursor: pointer;
+        display: block;
+
+        background-color: var(--active-color);
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.86;
+        border-radius: 4px;
+        padding: 0px;
+
+        margin: auto;
+
+        padding: 10px 41px;
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: var(--default-color2);
+    }
+}

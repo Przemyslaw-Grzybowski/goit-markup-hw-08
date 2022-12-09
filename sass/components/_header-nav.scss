@@ -1,0 +1,25 @@
+.header-nav {
+    display: flex;
+
+    &__logo {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        text-decoration: none;
+        text-align: center;
+
+        color: var(--default-color);
+        margin-top: 24px;
+        margin-right: 93px;
+        margin-bottom: 25px;
+
+        &:visited {
+            color: var(--default-color);
+        }
+    }
+
+    &__logo--icon {
+        color: var(--active-color);
+    }
+}

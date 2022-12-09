@@ -1,0 +1,64 @@
+.modal-checkbox {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 77px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: var(--default-color3);
+
+    &__checker {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        top: 4px;
+        left: -20px;
+        opacity: 0;
+
+        &:checked + .modal-checkbox__svg {
+            opacity: 1;
+            fill: var(--default-color2);
+            background-color: var(--active-color);
+        }
+    }
+
+    &__svg {
+        position: absolute;
+        z-index: 1;
+        top: 4px;
+        left: -20px;
+        opacity: 0;
+        fill: var(--default-color);
+    }
+
+    &__border {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--default-color);
+        border-radius: 2px;
+        left: -20px;
+        top: 4px;
+
+        transition: border-color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__field--text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--active-color);
+        text-decoration: underline;
+    }
+}

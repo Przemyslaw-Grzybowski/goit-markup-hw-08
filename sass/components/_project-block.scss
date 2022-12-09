@@ -1,0 +1,43 @@
+.project-block {
+    flex-basis: calc((100% - 60px) / 3);
+    background: var(--default-color2);
+    width: 370px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+
+    &:hover,
+    &:hover .blue-window__details {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transform: translateY(0);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__description {
+        border: 1px solid var(--bcg3-color);
+    }
+
+    &__description--title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.89;
+        letter-spacing: 0.06em;
+        color: var(--default-color);
+        width: 322px;
+        height: 36px;
+
+        margin: 20px 24px 4px 24px;
+    }
+
+    &__description--text {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        line-height: 1.89;
+        text-align: left;
+        letter-spacing: 0.03em;
+        padding: 4px 24px 20px 24px;
+        color: var(--default-color3);
+    }
+}

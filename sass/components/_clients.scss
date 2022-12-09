@@ -1,0 +1,27 @@
+.clients {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__logo {
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--default-color4);
+        border-radius: 4px;
+        fill: var(--default-color4);
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid var(--active-color);
+            border-radius: 4px;
+            fill: var(--active-color);
+            fill: var(--active-color);
+        }
+    }
+}

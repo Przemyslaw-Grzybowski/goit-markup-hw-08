@@ -1,0 +1,41 @@
+.header-contacts {
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 30px;
+
+    &__redirection {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--default-color3);
+        fill: var(--default-color3);
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--active-color);
+            fill: var(--active-color);
+        }
+
+        &:focus {
+            color: var(--active-color);
+            outline: none;
+        }
+    }
+
+    &__redirection--icon {
+        margin-right: 10px;
+    }
+}

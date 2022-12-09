@@ -1,0 +1,38 @@
+.lorem-ipsum {
+    padding-top: 94px;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    &__list--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bcg2-color);
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+
+    &__list--text-title {
+        display: block;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__list--text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--default-color3);
+        width: 270px;
+    }
+}
