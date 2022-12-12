@@ -21,8 +21,22 @@
         <header>
             <!-- mobile menu -->
 
+            <div class="mobile-nav">
+                <a class="mobile-nav__logo" href="#"
+                    ><span class="mobile-nav__logo--icon">Web</span>Studio</a
+                >
+                <button class="open-menu">
+                    <svg class="open-menu__button" width="32" height="16">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="mobile-menu d-none">
-                <button class="close-menu">X</button>
+                <button class="menu-close">
+                    <svg width="18.67" height="18.67">
+                        <use href="./images/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
                 <ul class="mobile-sides">
                     <li>
                         <a
@@ -63,7 +77,6 @@
                         </a>
                     </li>
                 </ul>
-
                 <ul class="mobile-social">
                     <li>
                         <div class="mobile-social__border">
@@ -83,13 +96,13 @@
                         </div>
                     </li>
                     <li>
-                        <div class="mobile-social__border--none">
+                        <div>
                             <a class="mobile-social__link" href="#">Linkedin</a>
                         </div>
                     </li>
                 </ul>
             </div>
-            <button class="open-menu">Z</button>
+
             <!-- mobile menu ends -->
             <section>
                 <div class="container">
@@ -258,9 +271,9 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section__business">
                 <div class="container">
-                    <h2 class="section-title">Czym się zajmujemy</h2>
+                    <h2 class="section-title__business">Czym się zajmujemy</h2>
                     <ul class="daily-business">
                         <li>
                             <img
@@ -307,16 +320,17 @@
             </section>
             <section class="team-background section">
                 <div class="container">
-                    <h2 class="section-title">Nasz zespół</h2>
+                    <h2 class="section-title__team">Nasz zespół</h2>
 
                     <ul class="team-list">
                         <li class="team-member">
-                            <img
-                                src="./images/pan_brazowa_koszula.jpg"
-                                alt="Uśmiechnięty brunet z brodą i wąsami."
-                                width="270"
-                                height="260"
-                            />
+                            <div class="team-member__box">
+                                <img
+                                    alt="Uśmiechnięty brunet z brodą i wąsami."
+                                    src="./images/designer.jpg"
+                                    srcset="./images/designer@2x.jpg 2x"
+                                />
+                            </div>
 
                             <h3 class="team-member__name">Johne Doe</h3>
 
@@ -356,10 +370,9 @@
                         </li>
                         <li class="team-member">
                             <img
-                                src="./images/pani.jpg"
                                 alt="Uśmiechnięta blondynka w okularach i czarnej marynarce"
-                                width="270"
-                                height="260"
+                                src="./images/fronted.jpg"
+                                srcset="./images/frontend@2x.jpg 2x"
                             />
 
                             <h3 class="team-member__name">Johne Doe</h3>
@@ -400,10 +413,9 @@
                         </li>
                         <li class="team-member">
                             <img
-                                src="./images/pan_jasna_koszula.jpg"
                                 alt="Uśmiechnięty pan z delikatnym zarostem w jasno-niebieskiej koszuli"
-                                width="270"
-                                height="260"
+                                src="./images/marketing.jpg"
+                                srcset="./images/marketing@2x.jpg 2x"
                             />
 
                             <h3 class="team-member__name">Johne Doe</h3>
@@ -442,10 +454,9 @@
                         </li>
                         <li class="team-member">
                             <img
-                                src="./images/pan_czarny_tshirt.jpg"
                                 alt="Arogancko uśmiechnięty brunet w okularach"
-                                width="270"
-                                height="260"
+                                src="./images/ui.jpg"
+                                srcset="./images/ui@2x.jpg 2x"
                             />
 
                             <h3 class="team-member__name">Johne Doe</h3>

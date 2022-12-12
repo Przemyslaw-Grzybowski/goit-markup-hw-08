@@ -1,0 +1,32 @@
+.mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-right: 23px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    &__logo {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        text-decoration: none;
+        text-align: center;
+
+        color: var(--default-color);
+
+        &:visited {
+            color: var(--default-color);
+        }
+    }
+
+    &__logo--icon {
+        color: var(--active-color);
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+}

@@ -1,4 +1,6 @@
-.footer-section {
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 1200px) {
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+    }
 }

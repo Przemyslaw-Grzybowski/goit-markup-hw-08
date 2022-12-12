@@ -1,5 +1,10 @@
 /* DESKTOP */
 
+@media screen and (max-width: 767px) {
+    .header-block {
+        display: none;
+    }
+}
 @media screen and (min-width: 1200px) {
     .header-block {
         display: flex;

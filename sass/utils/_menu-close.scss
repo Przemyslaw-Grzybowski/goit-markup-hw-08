@@ -1,0 +1,11 @@
+.menu-close {
+    position: absolute;
+    border: none;
+    background-color: inherit;
+    top: 21px;
+    right: 25px;
+    &:hover {
+        cursor: pointer;
+        fill: var(--active-color);
+    }
+}

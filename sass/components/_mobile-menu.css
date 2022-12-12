@@ -1,1 +1,1 @@
-.d-none{display:none}.mobile-menu{max-width:100vw;max-height:796px;background-color:var --default-color2;border:3px solid}@media screen and (min-width: 768px){.mobile-menu,.close-menu,.open-menu{display:none}}
+.d-none{display:none}.mobile-menu{position:fixed;background-color:var(--default-color2);top:0;left:0;width:100vw;height:100vh;z-index:3;overflow-x:hidden;overflow-y:auto;padding:48px 40px}.mobile-menu::-webkit-scrollbar{display:none}@media screen and (min-width: 768px){.mobile-menu{display:none}}

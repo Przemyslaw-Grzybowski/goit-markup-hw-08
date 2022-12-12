@@ -1,70 +1,72 @@
-.footer-info {
-    display: flex;
-    flex-direction: column;
-
-    &__logo {
-        display: block;
-        font-family: "Raleway";
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        padding-top: 60px;
-        padding-bottom: 20px;
-
-        text-decoration: none;
-
-        color: var(--default-color);
-
-        &:visited {
-            color: var(--default-color);
-        }
-    }
-
-    &__logo--color-one {
-        color: var(--active-color);
-    }
-
-    &__logo--color-two {
-        color: var(--default-color2);
-    }
-
-    &__data {
-        list-style: none;
+@media screen and (min-width: 1200px) {
+    .footer-info {
         display: flex;
         flex-direction: column;
-        padding-left: 0px;
-        padding-top: 20;
-        gap: 9px;
-        margin: 0px;
-    }
 
-    &__data--address {
-        font-size: 14px;
-        line-height: 1.71;
-        font-style: normal;
+        &__logo {
+            display: block;
+            font-family: "Raleway";
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            padding-top: 60px;
+            padding-bottom: 20px;
 
-        letter-spacing: 0.03em;
+            text-decoration: none;
 
-        margin-bottom: auto;
-        color: var(--default-color2);
-    }
+            color: var(--default-color);
 
-    &__data--contact {
-        font-size: 14px;
-        line-height: 1.71;
+            &:visited {
+                color: var(--default-color);
+            }
+        }
 
-        letter-spacing: 0.03em;
-
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-
-        &:hover {
-            cursor: pointer;
+        &__logo--color-one {
             color: var(--active-color);
         }
-        &:focus {
-            color: var(--active-color);
-            outline: none;
+
+        &__logo--color-two {
+            color: var(--default-color2);
+        }
+
+        &__data {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            padding-top: 20;
+            gap: 9px;
+            margin: 0px;
+        }
+
+        &__data--address {
+            font-size: 14px;
+            line-height: 1.71;
+            font-style: normal;
+
+            letter-spacing: 0.03em;
+
+            margin-bottom: auto;
+            color: var(--default-color2);
+        }
+
+        &__data--contact {
+            font-size: 14px;
+            line-height: 1.71;
+
+            letter-spacing: 0.03em;
+
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--active-color);
+            }
+            &:focus {
+                color: var(--active-color);
+                outline: none;
+            }
         }
     }
 }

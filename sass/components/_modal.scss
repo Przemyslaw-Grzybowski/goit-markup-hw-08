@@ -1,126 +1,109 @@
-.modal {
-    position: sticky;
-    width: 528px;
-    height: 581px;
-    left: 35%;
-    top: 25%;
-    background: var(--default-color2);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    opacity: inherit;
-    visibility: inherit;
-    transition-property: visibility, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &__close-btn {
-        top: 8px;
-        right: 8px;
-        width: 30px;
-        height: 30px;
-        margin-top: 8px;
-        margin-left: 490px;
-        fill: var(--default-color);
-        background-color: var(--default-color2);
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    &__field-setup {
-        display: flex;
-        position: relative;
-        margin-top: 28px;
-        width: 448px;
-        height: 40px;
-        margin-left: 40px;
-
-        border: 1px solid rgba(33, 33, 33, 0.2);
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+        left: 35%;
+        top: 25%;
+        background: var(--default-color2);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-        transition: border-color, fill;
+        opacity: inherit;
+        visibility: inherit;
+        transition-property: visibility, opacity;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:has(.modal__field-setup--input:focus) {
-            border-color: var(--active-color);
+        &__close-btn {
+            top: 8px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+            margin-top: 8px;
+            margin-left: 490px;
+            fill: var(--default-color);
+            background-color: var(--default-color2);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            cursor: pointer;
         }
-        &:has(.modal__field-setup--input:focus) .modal__field-setup--icon {
-            fill: var(--active-color);
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
         }
-    }
 
-    &__field-setup--icon {
-        margin-top: 13px;
-        margin-left: 15px;
-        fill: var(--default-color);
-        transition: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+        &__field-setup {
+            display: flex;
+            position: relative;
+            margin-top: 28px;
+            width: 448px;
+            height: 40px;
+            margin-left: 40px;
 
-    &__field-setup--input {
-        padding-left: 15px;
-        border: none;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
-        width: 100%;
-        color: var(--default-color);
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            transition: border-color, fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:focus {
-            outline: none;
+            &:has(.modal__field-setup--input:focus) {
+                border-color: var(--active-color);
+            }
+            &:has(.modal__field-setup--input:focus) .modal__field-setup--icon {
+                fill: var(--active-color);
+            }
         }
-    }
 
-    &__field-comments {
-        display: flex;
-        position: relative;
-        margin-top: 28px;
-        width: 448px;
-        height: 120px;
-        margin-left: 40px;
-        padding: 0px;
-
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        transition: border-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:has(.modal__field-comments--input:focus) {
-            border-color: var(--active-color);
+        &__field-setup--icon {
+            margin-top: 13px;
+            margin-left: 15px;
+            fill: var(--default-color);
+            transition: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
 
-    &__field-comments--input {
-        resize: none;
-        width: 416px;
-        height: 96px;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
+        &__field-setup--input {
+            padding-left: 15px;
+            border: none;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            width: 100%;
+            color: var(--default-color);
 
-        color: var(--default-color);
+            &:focus {
+                outline: none;
+            }
+        }
 
-        margin-top: 12px;
-        margin-left: 16px;
+        &__field-comments {
+            display: flex;
+            position: relative;
+            margin-top: 28px;
+            width: 448px;
+            height: 120px;
+            margin-left: 40px;
+            padding: 0px;
 
-        border: none;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            transition: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &::placeholder {
+            &:has(.modal__field-comments--input:focus) {
+                border-color: var(--active-color);
+            }
+        }
+
+        &__field-comments--input {
+            resize: none;
             width: 416px;
             height: 96px;
             font-family: "Roboto";
@@ -130,11 +113,29 @@
             line-height: 14px;
             letter-spacing: 0.01em;
 
-            color: rgba(117, 117, 117, 0.5);
-        }
+            color: var(--default-color);
 
-        &:focus {
-            outline: none;
+            margin-top: 12px;
+            margin-left: 16px;
+
+            border: none;
+
+            &::placeholder {
+                width: 416px;
+                height: 96px;
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.01em;
+
+                color: rgba(117, 117, 117, 0.5);
+            }
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }
